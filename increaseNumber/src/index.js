@@ -5,6 +5,9 @@
 // Write the function to find the increaseNumber obtained.
 function increaseNumber(initialValue, finalValue) {
      //your code here
+     if(typeof(initialValue) != "number" || typeof(finalValue) != "number" || finalValue < initialValue)
+      return null
+     return (finalValue - initialValue)
   }
 
 //Use SpecRunner to check the Test Cases.
